@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Appliance Energy Consumption | Data Story
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+  <nav class="navbar container">
+
+    <a class="logo" href="index.html">
+
+      <img src="assets/img/PowerIcon.png" alt="Power logo">
+
+      <span>
+        EnergyWise
+      </span>
+
+    </a>
+
+
+    <button
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-controls="primary-navigation">
+
+      ☰
+
+    </button>
+
+
+    <ul class="nav-links" id="primary-navigation">
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="televisions.html">
+          Televisions
+        </a>
+      </li>
+
+      <li>
+        <a class="active" href="data-story.html">
+          Data Story
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About Us
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+
+<section class="page-banner data-story-banner">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      TV ENERGY DATA STORY
+    </p>
+
+    <h1>
+      Choosing a TV starts with the right comparison.
+    </h1>
+
+    <p>
+      Each selected visualisation has its own six-box storytelling
+      board, following the storyboard approach from Exercise 3.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section class="section container two-column">
+
+
+  <article class="content-panel">
+
+    <p class="eyebrow">
+      AUDIENCE
+    </p>
+
+    <h2>
+      Household consumers
+    </h2>
+
+    <p>
+      This page is written for people comparing televisions before
+      buying. They need a simple story that helps them decide which
+      screen size and screen technology to compare.
+    </p>
+
+  </article>
+
+
+  <article class="content-panel">
+
+    <p class="eyebrow">
+      USER STORY
+    </p>
+
+    <h2>
+      A shopper needs clear guidance
+    </h2>
+
+    <p class="story-quote">
+      As a household consumer shopping for a new television, I want
+      to understand which screen sizes are common and how screen
+      technology changes labelled annual energy consumption, so that
+      I can compare realistic TV options before buying.
+    </p>
+
+  </article>
+
+
+</section>
+
+
+
+<section class="section chart-story">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        DATA STORY 1 - HISTOGRAM
+      </p>
+
+      <h2>
+        Which TV screen sizes are common?
+      </h2>
+
+      <p>
+        The histogram story gives the audience context before they
+        compare energy use. It shows where most TV screen sizes sit in
+        the processed dataset.
+      </p>
+
+    </div>
+
+
+    <figure class="chart-card story-chart">
+
+      <img
+        src="assets/img/screen-size-distribution.png"
+        alt="Histogram showing the distribution of television screen sizes">
+
+      <figcaption>
+        Histogram of television screen size in centimetres. The
+        processed dataset contains 4,724 usable television records,
+        ranging from about 39.5 cm to 293.4 cm.
+      </figcaption>
+
+    </figure>
+
+
+    <div class="storyboard-grid chart-storyboard" aria-label="Histogram storytelling boxes">
+
+      <article class="sticky-note">
+        <span class="note-label">
+          1. Issue
+        </span>
+        <p>
+          Shoppers often begin with TV size, but the dataset contains
+          many different screen-size ranges.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          2. Audience
+        </span>
+        <p>
+          Household consumers need to know which screen sizes are
+          realistic choices before comparing electricity use.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          3. Chart Role
+        </span>
+        <p>
+          The histogram counts televisions by screen size, showing how
+          common or uncommon each size range is.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          4. Insight
+        </span>
+        <p>
+          Many televisions cluster in the middle-to-large range, while
+          very small and very large models appear less often.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          5. Meaning
+        </span>
+        <p>
+          A useful energy comparison should start inside the size range
+          the shopper is most likely to buy.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          6. Action
+        </span>
+        <p>
+          Choose a realistic screen-size range first, then compare
+          similar TVs using their labelled energy values.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section visual-story chart-story">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        DATA STORY 2 - BAR CHART
+      </p>
+
+      <h2>
+        How does screen technology affect energy use?
+      </h2>
+
+      <p>
+        The bar chart story focuses on LCD, LCD (LED) and OLED
+        televisions. It compares average labelled annual energy
+        consumption inside the small, medium and large screen-size
+        categories.
+      </p>
+
+    </div>
+
+
+    <figure class="chart-card story-chart">
+
+      <img
+        src="assets/img/energy-by-size-tech.png"
+        alt="Grouped bar chart comparing average labelled annual energy consumption by screen size category and screen technology">
+
+      <figcaption>
+        Grouped KNIME bar chart showing average kWh/year by
+        screen-size category and screen technology. The small OLED
+        result should be read carefully because the small OLED group
+        has fewer records.
+      </figcaption>
+
+    </figure>
+
+
+    <div class="storyboard-grid chart-storyboard" aria-label="Bar chart storytelling boxes">
+
+      <article class="sticky-note">
+        <span class="note-label">
+          1. Issue
+        </span>
+        <p>
+          A buyer may assume screen technology alone decides energy
+          efficiency, but size and technology work together.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          2. Audience
+        </span>
+        <p>
+          TV shoppers want to compare LCD, LCD (LED) and OLED models
+          within the size category they are considering.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          3. Chart Role
+        </span>
+        <p>
+          The grouped bars compare average labelled kWh/year across
+          screen-size categories and screen technologies.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          4. Insight
+        </span>
+        <p>
+          Large TVs have the highest average consumption across the
+          technologies shown in the chart.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          5. Meaning
+        </span>
+        <p>
+          Technology still changes the comparison inside each size
+          group, so the technology label is useful but not enough.
+        </p>
+      </article>
+
+      <article class="sticky-note">
+        <span class="note-label">
+          6. Action
+        </span>
+        <p>
+          Compare the labelled kWh/year value for similar-size TVs
+          instead of choosing by technology name alone.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section takeaway-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        FINAL MESSAGE
+      </p>
+
+      <h2>
+        Use each chart for a different decision.
+      </h2>
+
+      <p>
+        The histogram helps shoppers choose the screen-size range to
+        compare. The bar chart then helps them compare screen
+        technology and labelled annual energy consumption within that
+        size range.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="footer">
+
+  <div class="container">
+
+    <p>
+      © <span class="year"></span>
+      Yong Wee Kiat · Appliance Energy Consumption Website
+    </p>
+
+    <p>
+      Generative AI acknowledgement:
+      ChatGPT was used to assist with website structure,
+      code examples and debugging. The code was reviewed
+      and adapted for this exercise.
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

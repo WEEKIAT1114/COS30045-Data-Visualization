@@ -1,65 +1,42 @@
-# Exercise 6 – Interactive Visualisations
+# Exercise 6 - Interactive D3 Visualisations
 
-## Overview
-In this exercise you will build **interactive data visualisations using D3.js**. Interaction allows users to explore the data and gain deeper insights through features such as filtering and tooltips.
+This folder contains the completed Week 6 exercise built from the supplied January 2026 television dataset.
 
-Use the **same repository you forked earlier for this unit** and complete this exercise inside the **Exercise 6 folder**.
+## Exercise coverage
 
----
+- **6.1 Histogram:** bins all 4,233 televisions into 200 kWh/year intervals and draws labelled axes.
+- **6.2 Filters:** filters the histogram by LED, LCD or OLED screen technology with animated bar and y-axis updates.
+- **6.3 Scatterplot:** plots star rating against labelled annual energy consumption, colour-coded by screen technology, with an SVG legend.
+- **6.4 Tooltips:** shows brand, model, screen size, screen technology, star rating and energy consumption when a point is hovered.
 
-## Exercise 6.1 – Interactive Histogram: Filtering
+The optional extensions are also included: screen-size filters, histogram tooltips, a scatterplot technology filter and histogram y-axis rescaling.
 
-### Aim
-Build a histogram and add **interactive filters**.
+## Run locally
 
-### Purpose
-Interaction is one of the key advantages of visualisations on the web. In this exercise you will build a **histogram using the TV dataset** and allow users to filter the data.
+D3 loads the CSV through HTTP, so do not open `visualisations.html` directly as a `file://` page. Start a local server from this folder, for example:
 
-Users should be able to explore energy consumption for different TV screen technologies such as:
+```powershell
+python -m http.server 8000
+```
 
-- LCD
-- LED
-- OLED
+Then open `http://localhost:8000/visualisations.html`.
 
-### Preparation
-Before starting, review:
+## Relevant files
 
-- This week's lecture slides
-- **Chapter 7 of Dufour and Meeks (2024)**
+```text
+visualisations.html
+assets/
+  css/
+    style.css
+    visualisations.css
+  data/
+    Ex6_TVdata_withStar.csv
+  js/
+    shared-constants.js
+    histogram.js
+    scatterplot.js
+    interactions.js
+    load-data.js
+```
 
----
-
-## Exercise 6.2 – Interactive Scatterplot: Tooltips
-
-### Aim
-Build a scatterplot and add **tooltips and colour coding**.
-
-### Purpose
-Tooltips are one of the most common interactive features in data visualisations. In this exercise you will create a **scatterplot using the TV dataset**.
-
-The chart should allow users to explore the relationship between:
-
-- Energy consumption
-- Star rating
-- Screen size
-- Screen technology
-
-Tooltips should display additional information such as **screen size**, and colours should represent **screen type**.
-
-### Preparation
-Before starting, review:
-
-- This week's lecture slides
-- **Chapter 7 of Dufour and Meeks (2024)**
-
----
-
-## Instructions
-
-1. Open your **existing forked repository**.
-2. Navigate to the **Exercise 6 folder**.
-3. Add the files needed to implement the histogram and scatterplot.
-4. Implement the required interactive features using **D3.js**.
-5. Commit and push your changes regularly to GitHub.
-
-Your forked repository will serve as your **submission record**.
+The script order at the bottom of `visualisations.html` matters: D3 and shared values are loaded before the chart and interaction functions, while `load-data.js` runs last to initialise the page.

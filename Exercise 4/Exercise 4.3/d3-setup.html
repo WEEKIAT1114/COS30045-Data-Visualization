@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliance Energy Consumption | D3 Setup</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar container">
+
+    <a class="logo" href="index.html" aria-label="Home">
+      <img src="assets/img/PowerIcon.png" alt="Power logo">
+      <span>EnergyWise</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="primary-navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="televisions.html">Televisions</a></li>
+      <li><a href="draw-svg-house.html">Draw SVGs</a></li>
+      <li><a class="active" href="d3-setup.html">D3 Setup</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+<main>
+
+  <section class="page-banner">
+    <div class="container">
+      <p class="eyebrow">
+        EXERCISES 4.3 TO 4.7
+      </p>
+
+      <h1>
+        D3 Setup
+      </h1>
+
+      <p>
+        Load CSV data with D3 and turn it into a responsive TV brand bar chart.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="section container">
+
+    <div class="section-heading">
+      <p class="eyebrow">
+        DATA VISUALISATION
+      </p>
+
+      <h2>
+        D3 TV brand bar chart
+      </h2>
+
+      <p>
+        D3 loads <code>data/tvBrandCount.csv</code>, binds each row to a
+        grouped SVG element, scales the bar widths, and adds brand and count
+        labels.
+      </p>
+    </div>
+
+    <div class="responsive-svg-container"></div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+    <p>
+      © <span class="year"></span>
+      Yong Wee Kiat · Appliance Energy Consumption Website
+    </p>
+
+    <p>
+      Generative AI acknowledgement:
+      ChatGPT was used to assist with website structure,
+      code examples and debugging. The code was reviewed
+      and adapted for this exercise.
+    </p>
+  </div>
+</footer>
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="assets/js/d3.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

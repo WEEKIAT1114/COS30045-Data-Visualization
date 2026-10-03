@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliance Energy Consumption | Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar container">
+
+    <a class="logo" href="index.html" aria-label="Home">
+      <img src="assets/img/PowerIcon.png" alt="Power logo">
+      <span>EnergyWise</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-controls="primary-navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="primary-navigation">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="televisions.html">Televisions</a></li>
+      <li><a href="exercise5-1.html">Exercise 5 Charts</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <div class="container hero-content">
+
+      <div>
+
+        <p class="eyebrow">
+          APPLIANCE ENERGY CONSUMPTION
+        </p>
+
+        <h1>
+          Understand your energy use at home.
+        </h1>
+
+        <p class="hero-text">
+          Explore how everyday appliances consume electricity
+          and estimate their running costs using our simple calculator.
+        </p>
+
+        <a class="button" href="#calculator">
+          Try the calculator
+        </a>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <span class="hero-icon">⚡</span>
+
+        <h2>
+          Small changes can make a difference
+        </h2>
+
+        <p>
+          Knowing how much energy an appliance uses can help
+          households make more informed choices.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRODUCTION -->
+  <section class="section container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        AUSTRALIAN MARKET
+      </p>
+
+      <h2>
+        Appliance energy consumption
+      </h2>
+
+      <p>
+        Australian households use electricity for cooling,
+        heating, entertainment, cooking and other daily activities.
+        Appliance power ratings and usage time both affect total consumption.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <article class="info-card">
+
+        <div class="card-icon">🏠</div>
+
+        <h3>
+          Daily habits
+        </h3>
+
+        <p>
+          Longer operating times generally result in higher
+          energy consumption.
+        </p>
+
+      </article>
+
+
+      <article class="info-card">
+
+        <div class="card-icon">📊</div>
+
+        <h3>
+          Compare usage
+        </h3>
+
+        <p>
+          Use estimated energy figures to compare appliances
+          and understand their running costs.
+        </p>
+
+      </article>
+
+
+      <article class="info-card">
+
+        <div class="card-icon">💡</div>
+
+        <h3>
+          Make informed choices
+        </h3>
+
+        <p>
+          Energy information can support practical decisions
+          about appliance use.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- CALCULATOR -->
+  <section id="calculator" class="section calculator-section">
+
+    <div class="container calculator-grid">
+
+      <div class="calculator-intro">
+
+        <p class="eyebrow">
+          JAVASCRIPT CHALLENGE
+        </p>
+
+        <h2>
+          Appliance Energy Calculator
+        </h2>
+
+        <p>
+          Enter the appliance power, average daily use and
+          electricity price. The calculator estimates daily,
+          monthly and yearly consumption and cost.
+        </p>
+
+      </div>
+
+
+      <form id="energyForm" class="calculator">
+
+        <label for="power">
+          Appliance power (watts)
+        </label>
+
+        <input
+          id="power"
+          type="number"
+          min="1"
+          step="1"
+          placeholder="e.g. 120"
+          required
+        >
+
+
+        <label for="hours">
+          Average hours per day
+        </label>
+
+        <input
+          id="hours"
+          type="number"
+          min="0"
+          max="24"
+          step="0.1"
+          placeholder="e.g. 4"
+          required
+        >
+
+
+        <label for="price">
+          Electricity price (cents per kWh)
+        </label>
+
+        <input
+          id="price"
+          type="number"
+          min="0"
+          step="0.1"
+          value="30"
+          required
+        >
+
+
+        <button class="button" type="submit">
+          Calculate
+        </button>
+
+        <div
+          id="calculatorMessage"
+          class="form-message"
+          aria-live="polite">
+        </div>
+
+      </form>
+
+
+      <div id="results" class="results" aria-live="polite">
+
+        <h3>
+          Your results
+        </h3>
+
+        <p>
+          Enter values above and select Calculate.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        FAQ
+      </p>
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+    </div>
+
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          What does appliance power mean?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Power is measured in watts (W) and describes the rate
+            at which an appliance uses electrical energy while operating.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          How is energy consumption calculated?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            The calculator converts watts to kilowatts and multiplies
+            that value by the number of hours the appliance is used.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button">
+          Is the calculator an exact electricity bill?
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>
+            No. It provides an estimate based on the values entered.
+            Actual bills can depend on tariffs, fees and other household usage.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="container">
+
+    <p>
+      © <span class="year"></span>
+      Yong Wee Kiat · Appliance Energy Consumption Website
+    </p>
+
+    <p>
+      Generative AI acknowledgement:
+      ChatGPT was used to assist with website structure,
+      code examples and debugging. The code was reviewed
+      and adapted for this exercise.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

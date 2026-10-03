@@ -1,0 +1,188 @@
+/* =========================================================
+   COS30045 Exercise 5.1 - Vertical bar chart with axis
+   Page-specific styles for the D3 chart page.
+   ========================================================= */
+
+.chart-panel {
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.chart-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 26px;
+}
+
+.chart-panel-header h2 {
+  max-width: 720px;
+  margin-bottom: 0;
+  font-size: clamp(1.55rem, 2.4vw, 2.35rem);
+}
+
+.chart-source {
+  flex: 0 0 auto;
+  margin: 4px 0 0;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--brown-800);
+  background: var(--cream-100);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.responsive-svg-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.responsive-svg-container svg {
+  display: block;
+  width: 100%;
+  min-width: 640px;
+  height: auto;
+}
+
+.chart-status {
+  min-height: 24px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.section-divider {
+  padding-top: 0;
+}
+
+.bar {
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.bar:hover {
+  opacity: 0.82;
+}
+
+.axis path,
+.axis line {
+  stroke: #c9baa6;
+}
+
+.axis text {
+  fill: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.grid-lines line {
+  stroke: #efe4d2;
+  stroke-dasharray: 4 6;
+}
+
+.grid-lines path {
+  display: none;
+}
+
+.axis-label,
+.bar-value-label,
+.line-end-label {
+  fill: var(--brown-900);
+  font-weight: 900;
+}
+
+.axis-label {
+  font-size: 0.92rem;
+}
+
+.bar-value-label {
+  font-size: 0.84rem;
+}
+
+.price-line {
+  fill: none;
+  stroke: #2f7d77;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.price-point {
+  fill: var(--amber-600);
+  stroke: var(--white);
+  stroke-width: 2.5;
+}
+
+.price-point:hover {
+  fill: var(--brown-900);
+}
+
+.line-end-label {
+  font-size: 0.86rem;
+}
+
+.donut-slice {
+  stroke: var(--white);
+  stroke-width: 3;
+}
+
+.donut-label,
+.donut-center-value,
+.donut-center-label,
+.legend-label,
+.legend-value {
+  fill: var(--brown-900);
+}
+
+.donut-label {
+  font-size: 0.82rem;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.donut-center-value {
+  font-size: 2.15rem;
+  font-weight: 900;
+  text-anchor: middle;
+}
+
+.donut-center-label {
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.legend-label {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.legend-value {
+  fill: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.legend-swatch {
+  rx: 5;
+}
+
+@media (max-width: 720px) {
+  .chart-panel {
+    padding: 24px;
+  }
+
+  .chart-panel-header {
+    display: grid;
+    gap: 16px;
+  }
+
+  .chart-source {
+    width: fit-content;
+  }
+}

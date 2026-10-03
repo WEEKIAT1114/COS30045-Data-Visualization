@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Appliance Energy Consumption | Exercise 5 Charts
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css">
+
+  <link
+    rel="stylesheet"
+    href="assets/css/exercise5-1.css">
+
+</head>
+
+
+<body>
+
+
+<header class="site-header">
+
+  <nav class="navbar container">
+
+    <a class="logo" href="index.html" aria-label="Home">
+
+      <img src="assets/img/PowerIcon.png" alt="Power logo">
+
+      <span>
+        EnergyWise
+      </span>
+
+    </a>
+
+
+    <button
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-controls="primary-navigation">
+
+      ☰
+
+    </button>
+
+
+    <ul class="nav-links" id="primary-navigation">
+
+      <li>
+        <a href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="televisions.html">
+          Televisions
+        </a>
+      </li>
+
+      <li>
+        <a class="active" href="exercise5-1.html">
+          Exercise 5 Charts
+        </a>
+      </li>
+
+      <li>
+        <a href="about.html">
+          About Us
+        </a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+</header>
+
+
+
+<main>
+
+
+<section class="page-banner">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      EXERCISE 5
+    </p>
+
+    <h1>
+      D3 Chart Exercises
+    </h1>
+
+    <p>
+      D3 charts for Exercise 5.1, Exercise 5.2 and Exercise 5.3,
+      using scaled axes, labels, CSV data and SVG marks.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section class="section container">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      TV ENERGY DATA
+    </p>
+
+    <h2>
+      Which screen technology consumes more energy?
+    </h2>
+
+    <p>
+      The chart uses the supplied Exercise 5.1 CSV file and plots
+      screen technology on the x-axis against mean labelled energy
+      consumption in kWh per year on the y-axis.
+    </p>
+
+  </div>
+
+
+  <article class="chart-panel">
+
+    <div class="chart-panel-header">
+
+      <div>
+
+        <p class="eyebrow">
+          D3 BAR CHART
+        </p>
+
+        <h2>
+          Mean energy consumption by screen technology
+        </h2>
+
+      </div>
+
+
+      <p class="chart-source">
+        Source: Data_exercise 5.1-1.csv
+      </p>
+
+    </div>
+
+
+    <div
+      id="bar-chart"
+      class="responsive-svg-container"
+      aria-label="Vertical bar chart of mean labelled energy consumption by screen technology">
+    </div>
+
+
+    <p
+      id="chart-status"
+      class="chart-status"
+      aria-live="polite">
+    </p>
+
+  </article>
+
+</section>
+
+
+<section class="section container section-divider">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      EXERCISE 5.2
+    </p>
+
+    <h2>
+      Australian electricity spot prices over time
+    </h2>
+
+    <p>
+      The line chart uses the supplied ARE spot price CSV file.
+      It plots year on the x-axis and the average price per
+      megawatt hour on the y-axis, with circles showing each
+      yearly data point.
+    </p>
+
+  </div>
+
+
+  <article class="chart-panel">
+
+    <div class="chart-panel-header">
+
+      <div>
+
+        <p class="eyebrow">
+          D3 SCATTER AND LINE CHART
+        </p>
+
+        <h2>
+          Average spot price by year
+        </h2>
+
+      </div>
+
+
+      <p class="chart-source">
+        Source: ARE_Spot_Prices.csv
+      </p>
+
+    </div>
+
+
+    <div
+      id="line-chart"
+      class="responsive-svg-container"
+      aria-label="Line chart of average Australian electricity spot prices from 1998 to 2024">
+    </div>
+
+
+    <p
+      id="line-chart-status"
+      class="chart-status"
+      aria-live="polite">
+    </p>
+
+  </article>
+
+</section>
+
+
+<section class="section container section-divider">
+
+  <div class="section-heading">
+
+    <p class="eyebrow">
+      EXERCISE 5.3
+    </p>
+
+    <h2>
+      TV model proportions by screen-size category
+    </h2>
+
+    <p>
+      The donut chart uses an aggregated CSV file with small,
+      medium and large TV model counts. Each slice shows the
+      proportion of models in that screen-size category.
+    </p>
+
+  </div>
+
+
+  <article class="chart-panel">
+
+    <div class="chart-panel-header">
+
+      <div>
+
+        <p class="eyebrow">
+          D3 DONUT CHART
+        </p>
+
+        <h2>
+          Small, medium and large TV models
+        </h2>
+
+      </div>
+
+
+      <p class="chart-source">
+        Source: Data_exercise 5.3.csv
+      </p>
+
+    </div>
+
+
+    <div
+      id="donut-chart"
+      class="responsive-svg-container"
+      aria-label="Donut chart showing the proportion of small, medium and large TV models">
+    </div>
+
+
+    <p
+      id="donut-chart-status"
+      class="chart-status"
+      aria-live="polite">
+    </p>
+
+  </article>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="footer">
+
+  <div class="container">
+
+    <p>
+      &copy; <span class="year"></span>
+      Yong Wee Kiat &middot; Appliance Energy Consumption Website
+    </p>
+
+    <p>
+      Generative AI acknowledgement:
+      ChatGPT was used to assist with website structure,
+      code examples and debugging. The code was reviewed
+      and adapted for this exercise.
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/exercise5-1.js"></script>
+<script src="assets/js/line-chart.js"></script>
+<script src="assets/js/donut-chart.js"></script>
+
+</body>
+
+</html>
